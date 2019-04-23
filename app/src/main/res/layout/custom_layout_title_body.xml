@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLightGray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/open_sans"
+        android:text="This is a title."
+        android:textSize="@dimen/txt_title_size"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/txt_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/open_sans"
+        android:text="descriptions here."
+        android:textSize="@dimen/txt_body_size"
+        android:visibility="visible"/>
+
+</LinearLayout>

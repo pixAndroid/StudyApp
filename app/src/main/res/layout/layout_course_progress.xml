@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:elevation="6dp"
+    android:background="@drawable/bg_white_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:elevation="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/pb_course_status"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:secondaryProgress="100"
+            android:progressDrawable="@drawable/pb_circular"/>
+
+        <TextView
+            android:id="@+id/txt_lessons_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="0%"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_comple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="Course Completed"
+        android:textColor="@color/colorBlackText"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Start Learning"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

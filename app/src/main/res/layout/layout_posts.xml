@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    >
+    <RelativeLayout
+        android:id="@+id/layout_posts_item"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:clipToPadding="false"
+        android:background="@color/colorGray"
+        android:outlineProvider="bounds"
+        android:elevation="8dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_posts_title"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Post's Title."
+            android:textColor="@color/colorWhiteText"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_no_of_posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="1/2"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhiteText" />
+
+        <RelativeLayout
+            android:background="@color/colorWhiteText"
+            android:layout_width="160dp"
+            android:elevation="6dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/txt_no_of_steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="2dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlackText"
+                android:text="16 steps to follow." />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
